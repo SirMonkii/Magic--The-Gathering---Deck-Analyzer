@@ -14,11 +14,11 @@ def get_card_info(name):
         return None  # Retorna None para evitar erros na exibição
 
 def set_card_name():
-    name = input("Please enter the full name of your card: ")  # Captura o nome corretamente
+    name = input(f"Please enter the full name of your card: (To finish entering your cards, type {"EXIT"})\n\n")  # Captura o nome corretamente
     return name
 
 def show_card_info(card_info):
         print(f"\nCard Name: {card_info['name']}")
         print(f"Converted Mana Cost: {card_info['cmc']}")
         print(f"Color Identity: {card_info['color_identity']}")
-        print(f"Mana cost: {card_info['mana_cost']}")
+        print(f"Mana cost: {card_info['mana_cost']}\n\n")
